@@ -1,40 +1,67 @@
-# visit https://github.com/mojombo/jekyll/wiki/Configuration for more settings
+# Site settings
+title: hyeonghoonpark
+email: hyeonghoonpark@gmail.com
+name : hyeonghoonpark
+description: > # this means to ignore newlines until "baseurl:"
+  Try hard, Try hard!
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://hyeonghoonpark.github.io" # the base hostname & protocol for your site
+twitter_username: hyeonghoonpark
+github_username:  hyeonghoonpark
+highlighter: pygments
+markdown : redcarpet
 
+# Build settings
+# markdown: kramdown
+
+# dbyll setting
 paginate: 10 # pagination based on number of posts
 paginate_path: "page:num"
 exclude: ["README.md"] # files to exclude
-highlighter: rouge
-markdown: kramdown
-disqus: dbyll
-google_analytics: dbyll
-title: dbyll
 
-defaults:
-  -
-    scope:
-      path: "" # empty string for all files
-    values:
-      title: dbyll
-
-description: Stylish Jekyll Theme
+description: Try hard Try Hard!
 author:
-  name: hyeonghoonpark
-  email: hyeonghoon.park@gmail.com
+  name: thswhyeonghoonparkave
+  email: hyeonghoonpark@gmail.com
   github: hyeonghoonpark
   twitter: hyeonghoonpark
-  pinterest: asd123
-  linkedin: asd123
-  bio: Your stylish, minimalist theme!
-  email_md5: 726351295ec82e145928582f595aa3aa
+  facebook: changwon.sohn
+  bio: try hard, try hard!
+  email_md5: c1e626278fb674ec46bde944b163f3d9
 
 rss_path: feed.xml
 categories_path: categories.html
 tags_path: tags.html
 
-# set it as url of an image
-# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
-
 BASE_PATH:
+# end dbyll setting
 
-plugins:
-  - jekyll-paginate
+# Prose
+prose:
+  media: 'assets/media'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "published"
+        field:
+          element: "hidden"
+          value: "true"
+      - name: "title"
+        field:
+          label: "Title"
+          element: "text"
+      - name: "date"
+        field:
+          label: "Date"
+          element: "text"
+      - name: "category"
+        field:
+          label: "Category"
+          element: "text"
+
+# guard
+destination: ./public
+exclude: ['scss','Gem*','Guard*','*.rb','.sass-cache','.git']
