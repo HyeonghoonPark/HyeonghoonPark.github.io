@@ -6,7 +6,6 @@ description: > # this means to ignore newlines until "baseurl:"
   Refactoring
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://hyeonghoonpark.github.io" # the base hostname & protocol for your site
-twitter_username: hyeonghoonpark
 github_username:  hyeonghoonpark
 highlighter: pygments
 markdown : redcarpet
