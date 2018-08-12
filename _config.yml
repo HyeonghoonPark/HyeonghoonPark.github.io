@@ -3,7 +3,7 @@ title: hyeonghoonpark
 email: hyeonghoonpark@gmail.com
 name : hyeonghoonpark
 description: > # this means to ignore newlines until "baseurl:"
-  Refactoring1
+  Refactoring
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://hyeonghoonpark.github.io" # the base hostname & protocol for your site
 github_username:  hyeonghoonpark
@@ -23,9 +23,8 @@ author:
   name: hyeonghoonpark
   email: hyeonghoonpark@gmail.com
   github: hyeonghoonpark
-  facebook: changwon.sohn
   bio: Refactoring34
-  email_md5: c1e626278fb674ec46bde944b163f3d9111
+  email_md5: 111
 
 rss_path: feed.xml
 categories_path: categories.html
